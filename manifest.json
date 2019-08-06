@@ -6,7 +6,7 @@
     "description": "Read arXiv.org as HTML web pages.",
 
     "icons": {
-      "48": "icons/icon-48.png"
+      "48": "icons/icon.svg"
     },
 
     "content_scripts": [
