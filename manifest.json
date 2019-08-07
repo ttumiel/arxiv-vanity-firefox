@@ -1,18 +1,19 @@
 {
     "manifest_version": 2,
     "name": "arXiv-Vanity",
-    "version": "1.0",
+    "version": "1.1",
 
-    "description": "Read arXiv.org as HTML web pages.",
+    "description": "Automatically redirect abstracts from arXiv to arxiv-vanity.",
 
     "icons": {
       "48": "icons/icon.svg"
     },
-
-    "content_scripts": [
-      {
-        "matches": ["*://arxiv.org/abs/*"],
-        "js": ["main.js"]
-      }
+    "background": {
+      "scripts": ["main.js"]
+    },
+    "permissions": [
+      "*://arxiv.org/abs/*",
+      "webRequest",
+      "webRequestBlocking"
     ]
   }
